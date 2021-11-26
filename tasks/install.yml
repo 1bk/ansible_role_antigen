@@ -5,7 +5,7 @@
     name:
       - git
       - zsh
-      - tar
+      # - tar # No longer in Homebrew?
       - gzip
     state: present
 
