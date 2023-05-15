@@ -1,11 +1,11 @@
 ---
 - name: install dependencies
-  become: yes
+  become: "{{ ansible_distribution != 'MacOSX' }}"
   package:
     name:
       - git
       - zsh
-      - tar
+      # - tar # No longer in Homebrew?
       - gzip
     state: present
 
